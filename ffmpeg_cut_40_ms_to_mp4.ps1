@@ -59,8 +59,10 @@ else{
 
 			$msec=$t
 			
-			# Write-Host $file.Name
+			
 			# Write-Host $file.Directory
+			# Write-Host $file.Name
+			# Write-Host $file.Extension
 			# Write-Host $file.FullName
 			
 			# ffprobe -i "$file" -show_entries format=duration -v quiet -of csv="p=0"
@@ -68,7 +70,7 @@ else{
 			
 			# $c="ffmpeg -hide_banner -loglevel error -i $file -ss 00:00:00.00 -t $($hour):$($min):$($sec).$($msec) -c:v libx264 -c:a copy $($f)"
 			$c="ffmpeg -hide_banner -loglevel error -i '$($file)' -ss 00:00:00.00 -t $($hour):$($min):$($sec).$($msec) -c:v copy -c:a copy '$($f)'"
-			$c
+			# $c
 			iex $c
 		}
 	}
