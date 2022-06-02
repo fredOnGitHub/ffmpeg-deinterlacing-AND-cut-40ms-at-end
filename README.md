@@ -7,6 +7,8 @@ ffmpeg deinterlacing or not .MTS to .MP4
 
 see:
 
+https://ffmpeg.org/download.html
+
 https://www.youtube.com/watch?v=MPV7JXTWPWI
 
 https://www.youtube.com/watch?v=cBqIxbmDOKg
